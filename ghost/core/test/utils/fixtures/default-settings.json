@@ -557,5 +557,34 @@
             "defaultValue": null,
             "type": "string"
         }
+    },
+    "donations": {
+        "donations_enabled": {
+            "defaultValue": "true",
+            "validations": {
+                "isEmpty": false,
+                "isIn": [
+                    [
+                        "true",
+                        "false"
+                    ]
+                ]
+            },
+            "type": "boolean"
+        },
+        "donations_currency": {
+            "defaultValue": "usd",
+            "validations": {
+                "isEmpty": false
+            },
+            "type": "string"
+        },
+        "donations_suggested_amount": {
+            "defaultValue": 0,
+            "validations": {
+                "isEmpty": false
+            },
+            "type": "number"
+        }
     }
 }

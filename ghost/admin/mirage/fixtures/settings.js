@@ -125,5 +125,10 @@ export default [
 
     // EDITOR
     setting('editor', 'editor_default_email_recipients', 'visibility'),
-    setting('editor', 'editor_default_email_recipients_filter', 'all')
+    setting('editor', 'editor_default_email_recipients_filter', 'all'),
+
+    // TIPS AND DONATIONS
+    setting('donations', 'donations_enabled', true),
+    setting('donations', 'donations_currency', 'USD'),
+    setting('donations', 'donations_suggested_amount', 0)
 ];
